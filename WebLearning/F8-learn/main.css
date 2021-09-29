@@ -1,0 +1,11 @@
+h1 {
+    color: blue;
+}
+
+:root {
+    --textColor: violet;
+}
+
+.container div div{
+    color: var(--textColor);
+}

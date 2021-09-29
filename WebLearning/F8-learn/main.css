@@ -6,6 +6,10 @@ h1 {
     --textColor: violet;
 }
 
+.box {
+    color: gray;
+}
+
 .container div div{
     color: var(--textColor);
 }

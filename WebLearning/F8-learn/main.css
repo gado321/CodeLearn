@@ -21,11 +21,23 @@ html {
     --text-color: red;
     color: var(--text-color);
 }
+.heading:hover {
+    color: brown;
+}
 
 .heading {
     font-size: 1rem;
 }
 
-.container::after {
+a::after {
     content: " (" attr(href) ")";
+}
+.text p {
+    display: none;
+    height: 100px;
+    width: 100px;
+}
+.text:hover p {
+    display: block;
+    background-color: aqua;
 }

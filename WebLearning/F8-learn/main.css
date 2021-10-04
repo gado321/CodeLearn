@@ -52,7 +52,7 @@ a::after {
 .box {
     height: 100px;
     width: 100px;
-    background-color: blanchedalmond;
+    background-color: rgb(184, 116, 13);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,15 +61,16 @@ a::after {
     padding: 10px;
     border: dashed 5px #f222f2;
     box-sizing: border-box;
-    background-clip: padding-box;
+    background-clip: border-box;
 }
 
 .box-image {
-    height: 50vh;
-    width: 50vw;
-    background-image: 
-    linear-gradient(180deg, rgba(199, 35, 232, 0.5), rgba(49, 235, 117, 0.5), rgba(199, 35, 232, 0.5)),
-    url(https://tiendientu.org/wp-content/uploads/2019/04/tiendientu.org-huobi-niem-yet-dogecoin-doge1-1200x872.png);
-    background-size: 100% 100%;
+    height: 300px;
+    width: 300px;
+    background-image: url(https://coin68.com/wp-content/uploads/2021/05/Doge-1-Mission-to-the-Moon.jpg);
+    background-size: 200px 200px;
+    border: 10px dashed red;
+    /* background-origin: border-box; */
+    background-position: top right 10px;
     background-repeat: no-repeat;
 }

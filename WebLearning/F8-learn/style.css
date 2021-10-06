@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box-bar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34.4px;
+    padding: 0 9px;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: rgb(1, 158, 144);
+    color: white;
+    border-left: 1px solid rgb(0, 107, 98);
+    font-family: Arial, Helvetica, sans-serif ;
+    float: left;
+}
+
+li:hover {
+    transition: 0.4s;
+    background-color: rgb(0, 107, 98);
+}

@@ -1,0 +1,2 @@
+if (num1 <= n) {q.push(num1); ok[num1] = 1;}
+		if (num2 <= n) {q.push(num2); ok[num2] = 1;}

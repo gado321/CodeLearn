@@ -1,23 +1,37 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
+#include <bits/stdc++.h>
 
-int n, tmp, a[100005], cnt[100005];
-long long ans;
+int check(int n){   
+	if (n <= 1) return 0;
+    for (int i = 2; i <= sqrt(n); i++)
+        if (n % i == 0) return 0;
+    return 1;
+}
+
+int TongUocChung(int m, int n){
+    int sum = 0;
+    for (int i = 1; i <= __gcd(m,n); i++)
+        if (m % i == 0 && n % i == 0) sum += i;
+    if (!sum) return -1;
+    return sum;
+}
+
+void input(int &n) {
+    cin >> n;
+}
+
+int input() {
+	int m;
+	cin >> m;
+	return m;
+}
 
 int main(){
-    cin >> n;
-    for (int i = 1; i <= n; ++i) cin >> a[i];
-    for (int i = 2; i <= n; i++)
-        if (a[i] > a[i - 1]) cnt[i] = cnt[i - 1] + 1;
-        else cnt[i] = 1;
-    ans = cnt[n];
-    for (int i = n - 1; i > 0; i++){
-        if (a[i] > a[i + 1]) tmp = cnt[i + 1] + 1;
-        else cnt[i] = 1;
-        ans += max(tmp,cnt[i]);
-        cnt[i] = tmp;
-    }
-    cout << ans;
+    int a, b;
+    a=input();
+    input(b);
+    std::cout << TongUocChung(a, b);
     return 0;
 }
